@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Atomus</RootNamespace>
+    <Authors>DSUN</Authors>
+    <Company>Atomus</Company>
+    <Product>Atomus Framework in .Net Core 3.1</Product>
+    <Description>Atomus Framework in .Net Core 3.1</Description>
+    <Copyright>Copyright 2020. DSUN all rights reserved.</Copyright>
+    <AssemblyName>Atomus.Console.DefaultDebug</AssemblyName>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/dsuny/Atomus.Console.DefaultDebug</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dsuny/Atomus.Console.DefaultDebug</RepositoryUrl>
+    <PackageIcon>atomus.png</PackageIcon>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Atomus Atomus.Core Console DefaultDebug AtomusFramework</PackageTags>
+    <PackageReleaseNotes>release 1.0.0</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\src\Controllers\DefaultLoginController.cs" Link="Controllers\DefaultLoginController.cs" />
+    <Compile Include="..\src\Controllers\DefaultMenuController.cs" Link="Controllers\DefaultMenuController.cs" />
+    <Compile Include="..\src\Models\DefaultLoginSearchModel.cs" Link="Models\DefaultLoginSearchModel.cs" />
+    <Compile Include="..\src\Models\DefaultMenuSearchModel.cs" Link="Models\DefaultMenuSearchModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Atomus.Core.dotNetCore" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\image\atomus.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
